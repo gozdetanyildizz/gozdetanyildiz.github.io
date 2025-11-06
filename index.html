@@ -44,7 +44,6 @@
           Oracle Cloud, ERP, OIC, OTBI, Qlik ile veri akışları; <strong>SQL/PLSQL</strong> ve <strong>T-SQL</strong> ile raporlama & otomasyon.
         </p>
         <div class="cta">
-          <!-- Burayı güncelledim -->
           <a class="btn" href="GozdeTanyildiz.pdf" target="_blank" rel="noopener">CV</a>
           <a class="btn ghost" href="https://github.com/gozdetanyildizz" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/gozdetanyildiz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -61,7 +60,6 @@
         <h2>Projeler</h2>
 
         <div class="grid">
-          <!-- Card 1 -->
           <article class="card">
             <img src="images/beststore.jpg" alt="E-Ticaret Uygulaması ekran görüntüsü" loading="lazy" onerror="this.closest('.card').style.display='none'" />
             <div class="card-body">
@@ -72,7 +70,6 @@
             </div>
           </article>
 
-          <!-- Card 2 -->
           <article class="card">
             <img src="images/refactor.jpg" alt="Kod Kalitesi Analiz Aracı ekran görüntüsü" loading="lazy" onerror="this.closest('.card').style.display='none'" />
             <div class="card-body">
@@ -83,7 +80,6 @@
             </div>
           </article>
 
-          <!-- Card 3 -->
           <article class="card">
             <img src="images/pneumonia.jpg" alt="Zatürre tespit projesi ekran görüntüsü" loading="lazy" onerror="this.closest('.card').style.display='none'" />
             <div class="card-body">
@@ -94,7 +90,6 @@
             </div>
           </article>
 
-          <!-- Card 4 -->
           <article class="card">
             <img src="images/feelify.jpg" alt="Feelify uygulaması ekran görüntüsü" loading="lazy" onerror="this.closest('.card').style.display='none'" />
             <div class="card-body">
@@ -129,7 +124,6 @@
         <h2>İletişim</h2>
         <p class="muted">Birlikte çalışmak istersen bana ulaşabilirsin.</p>
 
-        <!-- Formspree: action'ı kendi endpoint’inle değiştir -->
         <form class="contact" action="https://formspree.io/f/your-id" method="POST">
           <input type="text" name="name" placeholder="Adınız" required />
           <input type="email" name="email" placeholder="E-posta" required />
@@ -138,7 +132,7 @@
         </form>
 
         <p class="contact-links">
-          <a href="mailto:gozdetanyildiz@gmail.com">gozdetanyildiz@gmail.com</a> ·
+          <a href="mailto:gozdetanyildiz.dev@gmail.com">gozdetanyildiz.dev@gmail.com</a> ·
           <a href="https://github.com/gozdetanyildizz" target="_blank" rel="noopener noreferrer">GitHub</a> ·
           <a href="https://www.linkedin.com/in/gozdetanyildiz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </p>
@@ -151,13 +145,10 @@
   </footer>
 
   <script>
-    // yıl
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // tema toggle (dark/light)
     const root = document.documentElement;
     const btn = document.getElementById('themeToggle');
-
     function setTheme(t){
       root.setAttribute('data-theme', t);
       localStorage.setItem('theme', t);
@@ -168,7 +159,6 @@
     setTheme(localStorage.getItem('theme') || 'dark');
     btn.addEventListener('click', ()=> setTheme(root.getAttribute('data-theme') === 'dark' ? 'light':'dark'));
 
-    // aktif menü linkini vurgula
     const sections = [...document.querySelectorAll('section[id]')];
     const links = [...document.querySelectorAll('.nav a')];
     function onScroll(){
