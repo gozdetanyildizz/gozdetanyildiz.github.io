@@ -44,7 +44,8 @@
           Oracle Cloud, ERP, OIC, OTBI, Qlik ile veri akışları; <strong>SQL/PLSQL</strong> ve <strong>T-SQL</strong> ile raporlama & otomasyon.
         </p>
         <div class="cta">
-          <a class="btn" href="CV_GozdeTanyildiz.pdf" download>CV</a>
+          <!-- Burayı güncelledim -->
+          <a class="btn" href="GozdeTanyildiz.pdf" target="_blank" rel="noopener">CV</a>
           <a class="btn ghost" href="https://github.com/gozdetanyildizz" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/gozdetanyildiz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
@@ -153,7 +154,7 @@
     // yıl
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // tema toggle (dark/light) — butonda her zaman "geçilecek" tema ikonu görünsün
+    // tema toggle (dark/light)
     const root = document.documentElement;
     const btn = document.getElementById('themeToggle');
 
@@ -167,7 +168,7 @@
     setTheme(localStorage.getItem('theme') || 'dark');
     btn.addEventListener('click', ()=> setTheme(root.getAttribute('data-theme') === 'dark' ? 'light':'dark'));
 
-    // aktif menü linkini vurgula (küçük kalite dokunuşu)
+    // aktif menü linkini vurgula
     const sections = [...document.querySelectorAll('section[id]')];
     const links = [...document.querySelectorAll('.nav a')];
     function onScroll(){
