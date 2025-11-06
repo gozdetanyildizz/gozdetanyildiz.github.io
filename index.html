@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gözde Tanyıldız · Portföy</title>
+  <meta name="description" content="Yazılım Mühendisliği · Backend & Data · Proje Portföyü" />
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Gözde Tanyıldız · Portföy" />
+  <meta property="og:description" content="Backend, veri sistemleri ve AI odaklı yazılım projeleri." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gozdetanyildiz.github.io" />
+  <meta property="og:image" content="images/social-card.png" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top">GÖZDE</a>
+      <nav class="nav">
+        <a href="#projects">Projeler</a>
+        <a href="#skills">Yetenekler</a>
+        <a href="#contact">İletişim</a>
+        <button id="themeToggle" aria-label="Tema değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <img class="avatar" src="images/profile.jpg" alt="Gözde Tanyıldız" onerror="this.style.display='none'">
+      <div>
+        <h1>Gözde Tanyıldız</h1>
+        <p class="subtitle">Yazılım Mühendisliği · Backend & Data</p>
+        <p class="muted">
+          Oracle Cloud, ERP, OIC, OTBI, Qlik ile veri akışları; <strong>SQL/PLSQL</strong> ve <strong>T-SQL</strong> ile raporlama & otomasyon.
+        </p>
+        <div class="cta">
+          <a class="btn" href="CV_GozdeTanyildiz.pdf">CV</a>
+          <a class="btn ghost" href="https://github.com/gozdetanyildiz" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/gozdetanyildiz" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <a class="scroll" href="#projects" aria-label="Projeler bölümüne in">↓</a>
+  </section>
+
+  <main>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projeler</h2>
+
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <img src="images/beststore.jpg" alt="E-Ticaret Uygulaması ekran görüntüsü" loading="lazy" />
+            <div class="card-body">
+              <h3>🛒 E-Ticaret Uygulaması</h3>
+              <p>ASP.NET Core MVC tabanlı sistem; ürün, sepet, ödeme ve yönetici modülleri.</p>
+              <p class="tags"><code>C#</code><code>ASP.NET</code><code>SQL</code></p>
+              <a class="link" href="https://github.com/gozdetanyildiz/BestStoreMVC" target="_blank">GitHub’da gör →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <img src="images/refactor.jpg" alt="Kod Kalitesi Analiz Aracı ekran görüntüsü" loading="lazy" />
+            <div class="card-body">
+              <h3>🧩 Kod Kalitesi Analiz Aracı</h3>
+              <p>Python kod kalitesi ölçüm ve otomatik refaktör öneri sistemi.</p>
+              <p class="tags"><code>Python</code><code>Pylint</code></p>
+              <a class="link" href="https://github.com/gozdetanyildiz/py-code-quality-refactor" target="_blank">GitHub’da gör →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <img src="images/pneumonia.jpg" alt="Zatürre tespit projesi ekran görüntüsü" loading="lazy" />
+            <div class="card-body">
+              <h3>🧠 Zatürre Tespit Sistemi</h3>
+              <p>CNN ile akciğer röntgenlerinden sınıflandırma.</p>
+              <p class="tags"><code>Python</code><code>TensorFlow</code></p>
+              <a class="link" href="https://github.com/gozdetanyildiz/zaturre_tespit" target="_blank">GitHub’da gör →</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <img src="images/feelify.jpg" alt="Feelify uygulaması ekran görüntüsü" loading="lazy" />
+            <div class="card-body">
+              <h3>🎧 Speaker Recognition / Feelify</h3>
+              <p>Ses tanıma & duygu analizi; duyguya göre içerik önerisi.</p>
+              <p class="tags"><code>Python</code><code>Flutter</code><code>Dart</code></p>
+              <a class="link" href="https://github.com/gozdetanyildiz/feelifyapp" target="_blank">GitHub’da gör →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2>Yetenekler</h2>
+        <div class="chips">
+          <span class="chip">Java</span><span class="chip">C++</span><span class="chip">C#</span>
+          <span class="chip">Python</span><span class="chip">JavaScript</span>
+          <span class="chip">ASP.NET</span><span class="chip">Node.js</span>
+          <span class="chip">Flutter</span><span class="chip">Kotlin</span>
+          <span class="chip">Oracle SQL</span><span class="chip">PL/SQL</span><span class="chip">T-SQL</span>
+          <span class="chip">Oracle Cloud</span><span class="chip">OIC</span><span class="chip">Qlik</span><span class="chip">OTBI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>İletişim</h2>
+        <p class="muted">Birlikte çalışmak istersen bana ulaşabilirsin.</p>
+
+        <!-- Formspree örneği: action'ı kendi endpoint’inle değiştir -->
+        <form class="contact" action="https://formspree.io/f/your-id" method="POST">
+          <input type="text" name="name" placeholder="Adınız" required />
+          <input type="email" name="email" placeholder="E-posta" required />
+          <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
+          <button class="btn" type="submit">Gönder</button>
+        </form>
+
+        <p class="contact-links">
+          <a href="mailto:gozdetanyildiz@gmail.com">gozdetanyildiz@gmail.com</a> ·
+          <a href="https://github.com/gozdetanyildiz" target="_blank">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/gozdetanyildiz" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="y"></span> Gözde Tanyıldız — Yazılım Geliştirici Adayı</div>
+  </footer>
+
+  <script>
+    // yıl
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // tema toggle (dark/light)
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    function setTheme(t){ document.documentElement.setAttribute('data-theme', t); localStorage.setItem('theme', t); btn.textContent = t === 'dark' ? '🌙' : '☀️'; }
+    setTheme(localStorage.getItem('theme') || 'dark');
+    btn.addEventListener('click', ()=> setTheme(root.getAttribute('data-theme') === 'dark' ? 'light':'dark'));
+  </script>
+</body>
+</html>
