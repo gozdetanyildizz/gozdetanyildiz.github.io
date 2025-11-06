@@ -10,6 +10,10 @@ html[data-theme="light"]{
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+}
 body{
   font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   background:var(--bg); color:var(--text); line-height:1.65;
@@ -24,7 +28,8 @@ html[data-theme="light"] .topbar{background:rgba(255,255,255,.7)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 20px}
 .brand{font-weight:800;letter-spacing:.8px;text-decoration:none;color:var(--text)}
 .nav{display:flex;gap:14px;align-items:center}
-.nav a{color:var(--text);text-decoration:none}
+.nav a{color:var(--text);text-decoration:none;padding:6px 4px;border-radius:8px}
+.nav a[aria-current="true"]{background:rgba(123,92,255,.15);outline:1px solid var(--border)}
 .nav a:hover{text-decoration:underline}
 .nav button{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:6px 10px;cursor:pointer}
 
@@ -44,6 +49,7 @@ h1{font-size:40px;line-height:1.1;margin:0}
 .cta{display:flex;gap:10px;margin-top:14px}
 .btn{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;text-decoration:none;padding:10px 14px;border-radius:10px;font-weight:700;border:none}
 .btn.ghost{background:transparent;border:1px solid var(--accent);color:var(--text)}
+.btn:focus{outline:2px solid var(--accent-2);outline-offset:2px}
 .scroll{display:block;text-align:center;opacity:.7;margin-top:22px;color:var(--text);text-decoration:none}
 
 /* sections */
